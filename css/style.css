@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/* line 14, ../scss/style.scss */
+html, body {
+  font-family: "微軟正黑體","新細明體",Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  height: 100%;
+}
+
+/* line 23, ../scss/style.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+/* line 29, ../scss/style.scss */
+h1 {
+  font-size: 26px;
+}
+
+/* line 32, ../scss/style.scss */
+h2 {
+  font-size: 20px;
+}
+
+/* line 35, ../scss/style.scss */
+h3 {
+  font-size: 16px;
+}
+
+/* line 40, ../scss/style.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 43, ../scss/style.scss */
+img {
+  display: block;
+}
+
+/* line 47, ../scss/style.scss */
+a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 53, ../scss/style.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 65, ../scss/style.scss */
+.container {
+  min-height: 100%;
+  padding-bottom: 36px;
+  overflow: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 71, ../scss/style.scss */
+.header {
+  background: #484538;
+  color: #fff;
+  padding: 15px 0 0;
+  text-align: center;
+  position: relative;
+}
+/* line 77, ../scss/style.scss */
+.header h1 {
+  padding: 0 20px 15px;
+}
+/* line 80, ../scss/style.scss */
+.header .mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 26px;
+  color: #fff;
+  padding: 15px;
+}
+/* line 88, ../scss/style.scss */
+.header .menu {
+  background: #C9C19F;
+  display: none;
+}
+/* line 93, ../scss/style.scss */
+.header .menu ul li a {
+  padding: 10px 15px;
+  display: block;
+  color: #444;
+  text-align: left;
+  font-size: 14px;
+}
+/* line 99, ../scss/style.scss */
+.header .menu ul li a .icon {
+  width: 20px;
+  text-align: center;
+  display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+  /* line 71, ../scss/style.scss */
+  .header {
+    padding: 5px 0 0;
+  }
+  /* line 110, ../scss/style.scss */
+  .header h1 {
+    text-align: left;
+    padding: 0 0 5px;
+  }
+  /* line 114, ../scss/style.scss */
+  .header .mobile {
+    display: none;
+  }
+  /* line 117, ../scss/style.scss */
+  .header .menucontent {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  /* line 122, ../scss/style.scss */
+  .header .menu {
+    display: block;
+    position: absolute;
+    background: transparent;
+    bottom: 0;
+    right: 0;
+  }
+  /* line 128, ../scss/style.scss */
+  .header .menu ul {
+    font-size: 0;
+  }
+  /* line 130, ../scss/style.scss */
+  .header .menu ul li {
+    display: inline-block;
+  }
+  /* line 132, ../scss/style.scss */
+  .header .menu ul li a {
+    color: #fff;
+    transition: all 0.3s ease-in;
+  }
+  /* line 135, ../scss/style.scss */
+  .header .menu ul li a:hover {
+    background: #C9C19F;
+    color: #444;
+    transition: all 0.3s ease-in;
+  }
+}
+
+/* line 147, ../scss/style.scss */
+.totop {
+  position: fixed;
+  display: none;
+  right: 10px;
+  bottom: 40px;
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 161, ../scss/style.scss */
+.totop i {
+  position: relative;
+  top: -2px;
+}
+/* line 165, ../scss/style.scss */
+.totop:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+/* line 170, ../scss/style.scss */
+.block {
+  padding: 45px 15px 35px;
+}
+/* line 172, ../scss/style.scss */
+.block .title {
+  padding: 5px 0;
+}
+/* line 174, ../scss/style.scss */
+.block .title h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #1A090D;
+  margin-bottom: 5px;
+  color: #1A090D;
+}
+/* line 179, ../scss/style.scss */
+.block .title h2 .icon {
+  display: inline-block;
+  width: 25px;
+}
+/* line 184, ../scss/style.scss */
+.block .title h3 {
+  padding: 0 5px;
+}
+/* line 187, ../scss/style.scss */
+.block .title p {
+  padding-left: 20px;
+}
+/* line 190, ../scss/style.scss */
+.block .title .arti {
+  padding-bottom: 10px;
+}
+
+/* line 195, ../scss/style.scss */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* line 199, ../scss/style.scss */
+.card {
+  background: #fff;
+  padding: 10px;
+  margin: 15px 0 10px;
+}
+/* line 204, ../scss/style.scss */
+.card .text p {
+  padding-bottom: 10px;
+}
+/* line 206, ../scss/style.scss */
+.card .text p .icon {
+  width: 25px;
+  text-align: center;
+  display: inline-block;
+}
+/* line 211, ../scss/style.scss */
+.card .text p a {
+  color: #2F8DB2;
+  transition: color 0.3s ease-in;
+}
+/* line 214, ../scss/style.scss */
+.card .text p a:hover {
+  color: #5ab1d3;
+  transition: color 0.3s ease-in;
+}
+/* line 219, ../scss/style.scss */
+.card .text p:last-child {
+  padding-bottom: 0;
+}
+
+/* line 226, ../scss/style.scss */
+.table table {
+  border-spacing: 0;
+  width: 100%;
+}
+/* line 230, ../scss/style.scss */
+.table table thead tr td {
+  font-weight: bold;
+}
+/* line 234, ../scss/style.scss */
+.table table tr td {
+  padding: 8px;
+}
+/* line 236, ../scss/style.scss */
+.table table tr td .en {
+  display: block;
+  color: #777;
+}
+@media screen and (min-width: 640px) {
+  /* line 236, ../scss/style.scss */
+  .table table tr td .en {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+/* line 247, ../scss/style.scss */
+.work {
+  background: #9ec3b4;
+}
+/* line 249, ../scss/style.scss */
+.work .card {
+  padding: 0;
+}
+/* line 252, ../scss/style.scss */
+.work .title {
+  border-right: 2px solid #9ec3b4;
+  border-left: 2px solid #9ec3b4;
+  border-bottom: 1px solid #9ec3b4;
+}
+/* line 257, ../scss/style.scss */
+.work .tagR {
+  padding: 0 5px;
+  margin: 0 0 0 5px;
+  display: inline-block;
+  background: #6BE567;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 264, ../scss/style.scss */
+.work table {
+  border-top: 2px solid #9ec3b4;
+  border-right: 2px solid #9ec3b4;
+}
+/* line 267, ../scss/style.scss */
+.work table tr td {
+  border-left: 2px solid #9ec3b4;
+  border-bottom: 2px solid #9ec3b4;
+  word-break: break-word;
+}
+/* line 272, ../scss/style.scss */
+.work table .year {
+  vertical-align: top;
+  min-width: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 640px) {
+  /* line 272, ../scss/style.scss */
+  .work table .year {
+    min-width: 75px;
+  }
+}
+/* line 280, ../scss/style.scss */
+.work table .link {
+  text-align: center;
+  padding: 0;
+}
+/* line 283, ../scss/style.scss */
+.work table .link a {
+  color: #fff;
+  padding: 3px 7px;
+  margin: 5px;
+  background: #2F8DB2;
+  word-break: initial;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  transition: color 0.3s ease-in;
+  min-width: 40px;
+}
+/* line 292, ../scss/style.scss */
+.work table .link a:hover {
+  background: #5ab1d3;
+  transition: background 0.3s ease-in;
+}
+/* line 297, ../scss/style.scss */
+.work table .link .two {
+  margin-bottom: 5px;
+}
+
+/* line 303, ../scss/style.scss */
+.skill {
+  background: #C5C9A4;
+}
+/* line 305, ../scss/style.scss */
+.skill .card {
+  padding: 0;
+}
+/* line 308, ../scss/style.scss */
+.skill .taglevel {
+  padding: 10px 5px;
+  text-align: center;
+  max-width: 796px;
+  margin: 15px auto 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 315, ../scss/style.scss */
+.skill .tag {
+  padding: 3px 5px;
+  margin: 5px;
+  display: inline-block;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 320, ../scss/style.scss */
+.skill .tag.l1 {
+  background: #6DA1E8;
+}
+/* line 323, ../scss/style.scss */
+.skill .tag.l2 {
+  background: #6BE567;
+}
+/* line 326, ../scss/style.scss */
+.skill .tag.l3 {
+  background: #E3DF3D;
+}
+/* line 329, ../scss/style.scss */
+.skill .tag.l4 {
+  background: #F08E3F;
+}
+/* line 332, ../scss/style.scss */
+.skill .tag.l5 {
+  background: #ED3852;
+}
+/* line 336, ../scss/style.scss */
+.skill table {
+  border-top: 2px solid #C5C9A4;
+  border-right: 2px solid #C5C9A4;
+}
+/* line 339, ../scss/style.scss */
+.skill table tr td {
+  border-left: 2px solid #C5C9A4;
+  border-bottom: 2px solid #C5C9A4;
+}
+/* line 344, ../scss/style.scss */
+.skill table tbody .level {
+  padding: 0 5px;
+}
+
+/* line 350, ../scss/style.scss */
+.contact {
+  background: #BBE5ED;
+}
+/* line 352, ../scss/style.scss */
+.contact .card {
+  border-left: 2px solid #BBE5ED;
+  border-right: 2px solid #BBE5ED;
+}
+
+/* line 358, ../scss/style.scss */
+.footer {
+  background: #484538;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: -36px;
+  position: relative;
+}
+/* line 365, ../scss/style.scss */
+.footer p {
+  font-size: 12px;
+}

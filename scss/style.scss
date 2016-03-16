@@ -1,1 +1,369 @@
 @import "compass/css3";
+
+$pc: 1024px;
+$header: #484538;
+$footer: #484538;
+$menu: #C9C19F;
+$bg1: #9ec3b4;
+$bg2: #C5C9A4;
+$bg3: #BBE5ED;
+$h2: #1A090D;
+$link: #2F8DB2;
+$linkhover: lighten($link, 15%);
+
+html, body{
+	font-family: "微軟正黑體","新細明體",Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	line-height: 1.4;
+	font-weight: normal;
+}
+
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 16px;
+}
+
+
+p{
+	font-size: 14px;
+}
+img{
+	display: block;
+}
+
+a{
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin respond-to($val, $query: min-width, $media: screen) {
+    @media #{$media} and ($query: $val) {
+        @content;
+    }
+}
+
+.container{
+	min-height: 100%;
+	padding-bottom: 36px;
+	overflow: auto;
+	@include box-sizing(border-box);
+}
+.header{
+	background: $header;
+	color: #fff;
+	padding: 15px 0 0;
+	text-align: center;
+	position: relative;
+	h1{
+		padding: 0 20px 15px;
+	}
+	.mobile{
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 26px;
+		color: #fff;
+		padding: 15px;
+	}
+	.menu{
+		background: $menu;
+		display: none;
+		ul{
+			li{
+				a{
+					padding: 10px 15px;
+					display: block;
+					color: #444;
+					text-align: left;
+					font-size: 14px;
+					.icon{
+						width: 20px;
+						text-align: center;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+	@include respond-to($pc,min-width,screen) {
+		padding: 5px 0 0;
+		h1{
+			text-align: left;
+			padding: 0 0 5px;
+		}
+		.mobile{
+			display: none;
+		}
+		.menucontent{
+			max-width: 800px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.menu{
+			display: block;
+			position: absolute;
+			background: transparent;
+			bottom: 0;
+			right: 0;
+			ul{
+				font-size: 0;
+				li{
+					display: inline-block;
+					a{
+						color: #fff;
+						transition: all 0.3s ease-in;
+						&:hover{
+							background: $menu;
+							color: #444;
+							transition: all 0.3s ease-in;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.totop{
+	position: fixed;
+	display: none;
+	right: 10px;
+	bottom: 40px;
+	font-size: 24px;
+	width: 36px;
+	height: 36px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	opacity: 0.7;
+	transition: opacity 0.3s ease-in;
+	@include border-radius(5px);
+	i{
+		position: relative;
+		top: -2px;
+	}
+	&:hover{
+		opacity: 1;
+		transition: opacity 0.3s ease-in;
+	}
+}
+.block{
+	padding: 45px 15px 35px;
+	.title{
+		padding: 5px 0;
+		h2{
+			padding-bottom: 5px;
+			border-bottom: 1px dotted $h2;
+			margin-bottom: 5px;
+			color: $h2;
+			.icon{
+				display: inline-block;
+				width: 25px;
+			}
+		}
+		h3{
+			padding: 0 5px;
+		}
+		p{
+			padding-left: 20px;
+		}
+		.arti{
+			padding-bottom: 10px;
+		}
+	}
+}
+.content{
+	max-width: 800px;
+	margin: 0 auto;
+}
+.card{
+	background: #fff;
+	padding: 10px;
+	margin: 15px 0 10px;
+	.text{
+		p{
+			padding-bottom: 10px;
+			.icon{
+				width: 25px;
+				text-align: center;
+				display: inline-block;
+			}
+			a{
+				color: $link;
+				transition: color 0.3s ease-in;
+				&:hover{
+					color: $linkhover;
+					transition: color 0.3s ease-in;
+				}
+			}
+			&:last-child{
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+.table{
+	table{
+		border-spacing: 0;
+		width: 100%;
+		thead{
+			tr td{
+				font-weight: bold;
+			}
+		}
+		tr td{
+			padding: 8px;
+			.en{
+				display: block;
+				color: #777;
+				@include respond-to(640px,min-width,screen) {
+					display: inline-block;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}
+.work{
+	background: $bg1;
+	.card{
+		padding: 0;
+	}
+	.title{
+		border-right: 2px solid $bg1;
+		border-left: 2px solid $bg1;
+		border-bottom: 1px solid $bg1;
+	}
+	.tagR{
+		padding: 0 5px;
+		margin: 0 0 0 5px;
+		display: inline-block;
+		background: #6BE567;
+		@include border-radius(5px);
+	}
+	table{
+		border-top: 2px solid $bg1;
+		border-right: 2px solid $bg1;
+		tr td{
+			border-left: 2px solid $bg1;
+			border-bottom: 2px solid $bg1;
+		    word-break: break-word;
+		}
+		.year{
+			vertical-align: top;
+			min-width: 40px;
+			text-align: center;
+			@include respond-to(640px,min-width,screen) {
+				min-width: 75px;
+			}
+		}
+		.link{
+			text-align: center;
+			padding: 0;
+			a{
+				color: #fff;
+				padding: 3px 7px;
+				margin: 5px; 
+				background: $link;
+			    word-break: initial;
+				@include border-radius(5px);
+				transition: color 0.3s ease-in;
+				min-width: 40px;
+				&:hover{
+					background: $linkhover;
+					transition: background 0.3s ease-in;
+				}
+			}
+			.two{
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+.skill{
+	background: $bg2;
+	.card{
+		padding: 0;
+	}
+	.taglevel{
+		padding: 10px 5px;
+		text-align: center;
+		max-width: 796px;
+		margin: 15px auto 10px;
+		@include box-sizing(border-box);
+	}
+	.tag{
+		padding: 3px 5px;
+		margin: 5px;
+		display: inline-block;
+		@include border-radius(5px);
+		&.l1{
+			background: #6DA1E8;
+		}
+		&.l2{
+			background: #6BE567;
+		}
+		&.l3{
+			background: #E3DF3D;
+		}
+		&.l4{
+			background: #F08E3F;
+		}
+		&.l5{
+			background: #ED3852;
+		}
+	}
+	table{
+		border-top: 2px solid $bg2;
+		border-right: 2px solid $bg2;
+		tr td{
+			border-left: 2px solid $bg2;
+			border-bottom: 2px solid $bg2;
+		}
+		tbody{
+			.level{
+				padding: 0 5px;
+			}
+		}
+	}
+}
+.contact{
+	background: $bg3;
+	.card{
+		border-left: 2px solid $bg3;
+		border-right: 2px solid $bg3;
+	}
+}
+
+.footer{
+	background: $footer;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+	margin-top: -36px;
+	position: relative;
+	p{
+		font-size: 12px;
+	}
+}
+
