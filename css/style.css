@@ -173,127 +173,136 @@ ul {
   border-radius: 5px;
 }
 /* line 161, ../scss/style.scss */
-.totop i {
+.totop .relative {
+  width: 100%;
+  height: 100%;
   position: relative;
-  top: -2px;
 }
-/* line 165, ../scss/style.scss */
+/* line 166, ../scss/style.scss */
+.totop i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+}
+/* line 173, ../scss/style.scss */
 .totop:hover {
   opacity: 1;
   transition: opacity 0.3s ease-in;
 }
 
-/* line 170, ../scss/style.scss */
+/* line 178, ../scss/style.scss */
 .block {
   padding: 45px 15px 35px;
 }
-/* line 172, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 .block .title {
   padding: 5px 0;
 }
-/* line 174, ../scss/style.scss */
+/* line 182, ../scss/style.scss */
 .block .title h2 {
   padding-bottom: 5px;
   border-bottom: 1px dotted #1A090D;
   margin-bottom: 5px;
   color: #1A090D;
 }
-/* line 179, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
 .block .title h2 .icon {
   display: inline-block;
   width: 25px;
 }
-/* line 184, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .block .title h3 {
   padding: 0 5px;
 }
-/* line 187, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .block .title p {
   padding-left: 20px;
 }
-/* line 190, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 .block .title .arti {
   padding-bottom: 10px;
 }
 
-/* line 195, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 .content {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* line 199, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
 .card {
   background: #fff;
   padding: 10px;
   margin: 15px 0 10px;
 }
-/* line 204, ../scss/style.scss */
+/* line 212, ../scss/style.scss */
 .card .text p {
   padding-bottom: 10px;
 }
-/* line 206, ../scss/style.scss */
+/* line 214, ../scss/style.scss */
 .card .text p .icon {
   width: 25px;
   text-align: center;
   display: inline-block;
 }
-/* line 211, ../scss/style.scss */
+/* line 219, ../scss/style.scss */
 .card .text p a {
   color: #2F8DB2;
   transition: color 0.3s ease-in;
 }
-/* line 214, ../scss/style.scss */
+/* line 222, ../scss/style.scss */
 .card .text p a:hover {
   color: #5ab1d3;
   transition: color 0.3s ease-in;
 }
-/* line 219, ../scss/style.scss */
+/* line 227, ../scss/style.scss */
 .card .text p:last-child {
   padding-bottom: 0;
 }
 
-/* line 226, ../scss/style.scss */
+/* line 234, ../scss/style.scss */
 .table table {
   border-spacing: 0;
   width: 100%;
 }
-/* line 230, ../scss/style.scss */
+/* line 238, ../scss/style.scss */
 .table table thead tr td {
   font-weight: bold;
 }
-/* line 234, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 .table table tr td {
   padding: 8px;
 }
-/* line 236, ../scss/style.scss */
+/* line 244, ../scss/style.scss */
 .table table tr td .en {
   display: block;
   color: #777;
 }
 @media screen and (min-width: 640px) {
-  /* line 236, ../scss/style.scss */
+  /* line 244, ../scss/style.scss */
   .table table tr td .en {
     display: inline-block;
     margin-left: 5px;
   }
 }
 
-/* line 247, ../scss/style.scss */
+/* line 255, ../scss/style.scss */
 .work {
   background: #9ec3b4;
 }
-/* line 249, ../scss/style.scss */
+/* line 257, ../scss/style.scss */
 .work .card {
   padding: 0;
 }
-/* line 252, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 .work .title {
   border-right: 2px solid #9ec3b4;
   border-left: 2px solid #9ec3b4;
   border-bottom: 1px solid #9ec3b4;
 }
-/* line 257, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 .work .tagR {
   padding: 0 5px;
   margin: 0 0 0 5px;
@@ -303,35 +312,35 @@ ul {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 264, ../scss/style.scss */
+/* line 272, ../scss/style.scss */
 .work table {
   border-top: 2px solid #9ec3b4;
   border-right: 2px solid #9ec3b4;
 }
-/* line 267, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 .work table tr td {
   border-left: 2px solid #9ec3b4;
   border-bottom: 2px solid #9ec3b4;
   word-break: break-word;
 }
-/* line 272, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 .work table .year {
   vertical-align: top;
   min-width: 40px;
   text-align: center;
 }
 @media screen and (min-width: 640px) {
-  /* line 272, ../scss/style.scss */
+  /* line 280, ../scss/style.scss */
   .work table .year {
     min-width: 75px;
   }
 }
-/* line 280, ../scss/style.scss */
+/* line 288, ../scss/style.scss */
 .work table .link {
   text-align: center;
   padding: 0;
 }
-/* line 283, ../scss/style.scss */
+/* line 291, ../scss/style.scss */
 .work table .link a {
   color: #fff;
   padding: 3px 7px;
@@ -344,25 +353,25 @@ ul {
   transition: color 0.3s ease-in;
   min-width: 40px;
 }
-/* line 292, ../scss/style.scss */
+/* line 300, ../scss/style.scss */
 .work table .link a:hover {
   background: #5ab1d3;
   transition: background 0.3s ease-in;
 }
-/* line 297, ../scss/style.scss */
+/* line 305, ../scss/style.scss */
 .work table .link .two {
   margin-bottom: 5px;
 }
 
-/* line 303, ../scss/style.scss */
+/* line 311, ../scss/style.scss */
 .skill {
   background: #C5C9A4;
 }
-/* line 305, ../scss/style.scss */
+/* line 313, ../scss/style.scss */
 .skill .card {
   padding: 0;
 }
-/* line 308, ../scss/style.scss */
+/* line 316, ../scss/style.scss */
 .skill .taglevel {
   padding: 10px 5px;
   text-align: center;
@@ -372,7 +381,7 @@ ul {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 315, ../scss/style.scss */
+/* line 323, ../scss/style.scss */
 .skill .tag {
   padding: 3px 5px;
   margin: 5px;
@@ -381,52 +390,52 @@ ul {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 320, ../scss/style.scss */
+/* line 328, ../scss/style.scss */
 .skill .tag.l1 {
   background: #6DA1E8;
 }
-/* line 323, ../scss/style.scss */
+/* line 331, ../scss/style.scss */
 .skill .tag.l2 {
   background: #6BE567;
 }
-/* line 326, ../scss/style.scss */
+/* line 334, ../scss/style.scss */
 .skill .tag.l3 {
   background: #E3DF3D;
 }
-/* line 329, ../scss/style.scss */
+/* line 337, ../scss/style.scss */
 .skill .tag.l4 {
   background: #F08E3F;
 }
-/* line 332, ../scss/style.scss */
+/* line 340, ../scss/style.scss */
 .skill .tag.l5 {
   background: #ED3852;
 }
-/* line 336, ../scss/style.scss */
+/* line 344, ../scss/style.scss */
 .skill table {
   border-top: 2px solid #C5C9A4;
   border-right: 2px solid #C5C9A4;
 }
-/* line 339, ../scss/style.scss */
+/* line 347, ../scss/style.scss */
 .skill table tr td {
   border-left: 2px solid #C5C9A4;
   border-bottom: 2px solid #C5C9A4;
 }
-/* line 344, ../scss/style.scss */
+/* line 352, ../scss/style.scss */
 .skill table tbody .level {
   padding: 0 5px;
 }
 
-/* line 350, ../scss/style.scss */
+/* line 358, ../scss/style.scss */
 .contact {
   background: #BBE5ED;
 }
-/* line 352, ../scss/style.scss */
+/* line 360, ../scss/style.scss */
 .contact .card {
   border-left: 2px solid #BBE5ED;
   border-right: 2px solid #BBE5ED;
 }
 
-/* line 358, ../scss/style.scss */
+/* line 366, ../scss/style.scss */
 .footer {
   background: #484538;
   color: #fff;
@@ -435,7 +444,7 @@ ul {
   margin-top: -36px;
   position: relative;
 }
-/* line 365, ../scss/style.scss */
+/* line 373, ../scss/style.scss */
 .footer p {
   font-size: 12px;
 }
